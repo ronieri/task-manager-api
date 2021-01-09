@@ -4,7 +4,7 @@ import { TaskStatus } from '../task.model';
 export class TaskStatusValidationPipe implements PipeTransform {
     readonly allowedStatus = Object.values(TaskStatus);
 
-    transform(value: any){
+    transform(value: any): any {
         
         value = value.toUpperCase();
 
