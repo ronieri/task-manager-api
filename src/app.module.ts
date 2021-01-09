@@ -4,9 +4,6 @@ import { TasksModule } from './tasks/tasks.module';
 import { typeOrmConfig } from './config/typeorm.config';
 
 @Module({
-  imports: [
-    TypeOrmModule.forRoot(typeOrmConfig),
-    TasksModule,
-  ],
+  imports: [TypeOrmModule.forRoot(typeOrmConfig), TasksModule],
 })
 export class AppModule {}
