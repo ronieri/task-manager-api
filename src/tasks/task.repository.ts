@@ -7,7 +7,7 @@ import { User } from '../auth/user.entity';
 import { InternalServerErrorException, Logger } from '@nestjs/common';
 
 @EntityRepository(Task)
-export class TaksRepository extends Repository<Task> {
+export class TaskRepository extends Repository<Task> {
 
   private logger = new Logger('TaskRepository');
 
